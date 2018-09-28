@@ -95,6 +95,8 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\mayawei\source\repos\secu\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>flex.lib;libfl.a;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -179,7 +181,9 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CDialog1.h" />
     <ClInclude Include="ChildView.h" />
+    <ClInclude Include="Dialog1.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="secu.h" />
@@ -187,7 +191,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CDialog1.cpp" />
     <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="Dialog1.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="secu.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -207,6 +213,5 @@
     <Image Include="res\secu.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
 </Project>
