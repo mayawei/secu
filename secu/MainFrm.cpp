@@ -10,6 +10,8 @@
 #include<iostream>
 #include<string>
 #include"Dialog1.h"
+#include"Dialog2.h"
+
 using namespace std;
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -23,6 +25,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_WM_SETFOCUS()
 	ON_COMMAND(ID_32771, &CMainFrame::On32771)
 	ON_COMMAND(ID_32773, &CMainFrame::On32773)
+	ON_COMMAND(ID_32774, &CMainFrame::On32774)
 END_MESSAGE_MAP()
 
 // CMainFrame 构造/析构
@@ -103,10 +106,6 @@ BOOL CMainFrame::OnCmdMsg(UINT nID, int nCode, void* pExtra, AFX_CMDHANDLERINFO*
 
 void CMainFrame::On32771()
 {
-	
-
-	
-
 	// TODO: 在此添加命令处理程序代码
 }
 
@@ -115,5 +114,13 @@ void CMainFrame::On32773()
 {
 	Dialog1 *pDlg = new Dialog1;
 	pDlg->Create(IDD_DIALOG1, this);
+	pDlg->ShowWindow(SW_SHOW);
+}
+
+
+void CMainFrame::On32774()
+{
+	Dialog2 *pDlg = new Dialog2;
+	pDlg->Create(IDD_DIALOG2, this);
 	pDlg->ShowWindow(SW_SHOW);
 }

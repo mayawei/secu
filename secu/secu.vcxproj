@@ -92,11 +92,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>C:\Users\mayawei\source\repos\secu\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>flex.lib;libfl.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>format.lib;getlength.lib;of2.lib;overflow_1.lib;flex.lib;flex_cfg.lib;libfl.a;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -184,16 +185,19 @@
     <ClInclude Include="CDialog1.h" />
     <ClInclude Include="ChildView.h" />
     <ClInclude Include="Dialog1.h" />
+    <ClInclude Include="Dialog2.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="secu.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="textDialog1.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CDialog1.cpp" />
     <ClCompile Include="ChildView.cpp" />
     <ClCompile Include="Dialog1.cpp" />
+    <ClCompile Include="Dialog2.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="secu.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -202,6 +206,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="textDialog1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="secu.rc" />

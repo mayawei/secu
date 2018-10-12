@@ -39,6 +39,12 @@
     <ClInclude Include="Dialog1.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Dialog2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="textDialog1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="secu.cpp">
@@ -57,6 +63,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Dialog1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="textDialog1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
